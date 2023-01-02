@@ -11,9 +11,6 @@
         <link rel="icon" href="IMAGENS/logo_icon.png">
         <link rel="stylesheet" href="CSS/normalize.css">
         <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/pequena.css">
-        <link rel="stylesheet" href="CSS/media.css">
-        <link rel="stylesheet" href="CSS/grande.css">
     </head>
     <body>
         <header>
@@ -23,7 +20,7 @@
                         <img src="IMAGENS/logo_icon.png" alt="Projeto abraço logo">
                         <span>PROJETO <strong class="abraco">ABRAÇO</strong></span>
                     </a>
-                    <nav>
+                    <nav class="pc-menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#projeto">Projeto</a></li>
@@ -31,6 +28,7 @@
                             <li><a href="#colab">Como colaborar?</a></li>
                         </ul>
                     </nav>
+                    <nav class="mobile-menu"></nav>
                 </div>
                 <main class="header-main">
                     <div class="costas"></div>
@@ -51,7 +49,7 @@
             </section>
             <section id="projeto">
                 <h1>Nossas iniciativas</h1>
-                <div class="projeto-content projeto-primeiro">
+                <div class="projeto-content">
                     <article class="projeto-img">
                         <div class="projeto-card apoio"></div>
                         <p>Grupo de apoio psicológico</p>
@@ -64,8 +62,6 @@
                         <div class="projeto-card bazar"></div>
                         <p>Ações sociais</p>
                     </article>
-                </div>
-                <div class="projeto-content">
                     <article class="projeto-img">
                         <div class="projeto-card infantil"></div>
                         <p>Grupo de apoio infantil</p>
@@ -78,14 +74,16 @@
             </section>
             <section id="contato">
                 <h1>Se precisar de nossa ajuda<br>pode nos encontrar no</h1>
-                <div class="tel">
-                    <p>Telefone:</p><p>(41) 99916-1396</p>
-                </div>
-                <div class="email">
-                    <p>Email:</p><p>levandoabraco@gmail.com</p>
-                </div>
-                <div class="end">
-                    <p>Endereço:</p><p>R. Morlei Manoel da Rosa, 196 - Alto Tarumã</p>
+                <div class="container">
+                    <div class="tel">
+                        <p>Telefone:</p><p><a href="tel:+5541999161396">(41) 99916-1396</a></p>
+                    </div>
+                    <div class="email">
+                        <p>Email:</p><p><a href="mailto:levandoabraco@gmail.com">levandoabraco@gmail.com</a></p>
+                    </div>
+                    <div class="end">
+                        <p>Endereço:</p><p>R. Morlei Manoel da Rosa, 196 - Alto Tarumã</p>
+                    </div>
                 </div>
                 <p>Ou em nossas redes sociais
                 <ul>
@@ -131,5 +129,7 @@
             </address>
             <img src="IMAGENS/logo_icon_full.png" alt="Projeto abraço logo">
         </footer>
+        <script src="Javascript/rollTo.js"></script>
+        <script src="Javascript/menu.js"></script>
     </body>
 </html>
